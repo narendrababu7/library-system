@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>Edit Book</title></head>
+<body style="margin:0;font-family:Arial;background:#f7f7f7;">
+  {{topnav|safe}}
+  <div style="margin-top:90px;text-align:center;padding:20px;">
+    <h2 style="color:#2c3e50;">Edit Book Details</h2>
+    <form method="post" style="margin-top:20px;display:flex;flex-direction:column;gap:10px;align-items:center;background:white;padding:20px;border-radius:8px;width:300px;margin:auto;">
+      <input name="title" value="{{book[1]}}" placeholder="Title" required style="padding:8px;width:100%;border:1px solid #ccc;border-radius:4px;">
+      <input name="author" value="{{book[2]}}" placeholder="Author" required style="padding:8px;width:100%;border:1px solid #ccc;border-radius:4px;">
+      <input name="quantity" type="number" value="{{book[3]}}" placeholder="Qty" required style="padding:8px;width:100%;border:1px solid #ccc;border-radius:4px;">
+      <button type="submit" style="padding:10px;background:#1e90ff;color:white;border:none;border-radius:5px;width:100%;">Update Book</button>
+    </form>
+  </div>
+</body>
+</html>

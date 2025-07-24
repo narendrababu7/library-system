@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>User Dashboard</title></head>
+<body style="margin:0;font-family:Arial;background:url('https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=1400&q=80') no-repeat center center fixed;background-size:cover;">
+  {{topnav|safe}}
+  <div style="margin-top:120px;text-align:center;padding:40px;background:rgba(255,255,255,0.85);max-width:700px;margin-left:auto;margin-right:auto;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,0.3);">
+    <h1 style="color:#1e272e;font-size:40px;">Welcome to BookHive</h1>
+    <p style="color:#2f3640;font-size:18px;">Hello, {{user}}! Browse and request books easily.</p>
+    <div style="margin-top:20px;display:flex;flex-wrap:wrap;justify-content:center;gap:20px;">
+      <a href="/books" style="padding:15px 30px;background:#1abc9c;color:white;text-decoration:none;border-radius:8px;">Browse Books</a>
+      <a href="/issue_return" style="padding:15px 30px;background:#f39c12;color:white;text-decoration:none;border-radius:8px;">My Issued Books</a>
+      <a href="/profile" style="padding:15px 30px;background:#3498db;color:white;text-decoration:none;border-radius:8px;">My Profile</a>
+    </div>
+  </div>
+  {{footer|safe}}
+</body>
+</html>

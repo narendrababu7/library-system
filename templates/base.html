@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LibraFlow</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body style="font-family:Arial, sans-serif; margin:20px;">
+  <!-- Navigation -->
+  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
+    <h2 style="color:#2c3e50;">LibraFlow</h2>
+    <div>
+      <a href="/" style="margin-right:15px; text-decoration:none; color:#3498db;">Dashboard</a>
+      <a href="/books" style="margin-right:15px; text-decoration:none; color:#3498db;">Books</a>
+      <a href="/members" style="margin-right:15px; text-decoration:none; color:#3498db;">Members</a>
+      <a href="/issue_return" style="margin-right:15px; text-decoration:none; color:#3498db;">Issue/Return</a>
+      <a href="/reports" style="text-decoration:none; color:#3498db;">Reports</a>
+    </div>
+  </div>
+
+  <!-- Content -->
+  {% block content %}{% endblock %}
+</body>
+</html>

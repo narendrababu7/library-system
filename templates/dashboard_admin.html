@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head><title>Admin Dashboard</title></head>
+<body style="margin:0;font-family:Arial;
+  background:url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1400&q=80') no-repeat center center fixed;
+  background-size:cover;display:flex;flex-direction:column;min-height:100vh;">
+
+  {{topnav|safe}}
+
+  <!-- Main Dashboard Content -->
+  <div style="flex:1;margin-top:120px;text-align:center;padding:40px;
+      background:rgba(255,255,255,0.88);
+      max-width:800px;margin-left:auto;margin-right:auto;
+      border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,0.3);">
+    
+    <h1 style="color:#1e272e;font-size:40px;">Admin Dashboard</h1>
+    <p style="color:#2f3640;font-size:18px;">Welcome, {{user}}! Manage the library operations from here.</p>
+    
+    <div style="margin-top:20px;display:flex;flex-wrap:wrap;justify-content:center;gap:20px;">
+      <a href="/books" style="padding:15px 30px;background:#1e90ff;color:white;text-decoration:none;border-radius:8px;">Manage Books</a>
+      <a href="/members" style="padding:15px 30px;background:#27ae60;color:white;text-decoration:none;border-radius:8px;">Manage Members</a>
+      <a href="/issue_return" style="padding:15px 30px;background:#f39c12;color:white;text-decoration:none;border-radius:8px;">Issue / Return</a>
+      <a href="/reports" style="padding:15px 30px;background:#8e44ad;color:white;text-decoration:none;border-radius:8px;">View Reports</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer style="background:rgba(0,0,0,0.85);color:white;text-align:center;padding:15px;margin-top:auto;">
+    <p style="margin:0;font-size:14px;">&copy; 2025 BookHive Library System | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

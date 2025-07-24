@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head><title>BookHive Signup</title></head>
+<body style="margin:0;font-family:Arial;background:url('https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=1400&q=80') no-repeat center center fixed;background-size:cover;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh;">
+  <div style="background:rgba(255,255,255,0.9);padding:40px;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,0.3);text-align:center;max-width:400px;">
+    <h1 style="color:#1e272e;font-size:36px;margin-bottom:10px;">Create an Account</h1>
+    <form method="post" style="display:flex;flex-direction:column;gap:10px;">
+      <input name="username" placeholder="Username" required style="padding:10px;border:1px solid #ccc;border-radius:5px;">
+      <input name="password" type="password" placeholder="Password" required style="padding:10px;border:1px solid #ccc;border-radius:5px;">
+      <select name="role" style="padding:10px;border:1px solid #ccc;border-radius:5px;">
+        <option value="user">User</option>
+        <option value="admin">Admin</option>
+      </select>
+      <button type="submit" style="padding:12px;background:#27ae60;color:white;border:none;border-radius:5px;font-size:16px;">Sign Up</button>
+    </form>
+    <p style="color:red;margin-top:10px;">{{msg}}</p>
+    <p style="margin-top:10px;"><a href="/" style="color:#1e90ff;text-decoration:none;font-weight:bold;">Already have an account? Login</a></p>
+  </div>
+</body>
+</html>
